@@ -64,17 +64,18 @@ export default function Contact() {
                     className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500"
                 ></textarea>
 
-                {/* বাটন স্টাইল আপডেট করা হয়েছে */}
+                {/* বাটন স্টাইল এখন আপনার "Show more" এর মতো নিখুঁত */}
                 <button 
                     type='submit' 
                     className="py-3 px-10 w-max flex items-center justify-between gap-2 border border-gray-400 rounded-full mx-auto duration-500 transition-all
-                               /* লাইট মোড: সাদা ব্যাকগ্রাউন্ড এবং আপনার দেওয়া #f4f4f4 হোভার কালার */
+                               /* লাইট মোড: সাদা ব্যাকগ্রাউন্ড এবং হোভারে #f4f4f4 */
                                bg-white text-black hover:bg-[#f4f4f4]
-                               /* ডার্ক মোড: আপনার ব্র্যান্ড রেড ব্যাকগ্রাউন্ড */
-                               dark:bg-[#8c0522] dark:text-white dark:border-none dark:hover:bg-[#b0062a]"
+                               /* ডার্ক মোড: ডিফল্টভাবে স্বচ্ছ এবং বর্ডার */
+                               dark:bg-transparent dark:text-white dark:border-white/50 
+                               /* ডার্ক মোড হোভার: মাউস নিলে লাল হবে */
+                               dark:hover:bg-[#8c0522] dark:hover:border-transparent"
                 >
                     Submit now
-                    {/* লাইট মোডে কালো এবং ডার্ক মোডে সাদা অ্যারো */}
                     <img src="/assets/right-arrow-bold.png" alt="" className="w-4 dark:hidden" />
                     <img src="/assets/right-arrow-white.png" alt="" className="w-4 hidden dark:block" />
                 </button>
