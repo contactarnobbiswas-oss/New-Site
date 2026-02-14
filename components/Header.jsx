@@ -6,12 +6,17 @@ export default function Header() {
                 Hi! I&apos;m Arnob Biswas
                 <img src="/assets/hand-icon.png" alt="" className="w-6 mb-1" />
             </h3>
-            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Professional Video Editor & Visual Storyteller.</h1>
-            <p className="max-w-2xl mx-auto font-Ovo">I specialize in cinematic editing, YouTube content, and commercial ads with over 6 years of experience in creating viral visuals.</p>
+            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+                Professional Video Editor & Visual Storyteller.
+            </h1>
+            <p className="max-w-2xl mx-auto font-Ovo">
+                I specialize in cinematic editing, YouTube content, and commercial ads with over 6 years of experience in creating viral visuals.
+            </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+                {/* Contact Me Button with Fixed Glitch */}
                 <a href="#contact"
-                    className="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#ad0d2f] to-[#7b021c] text-white flex items-center gap-2 dark:border-transparent">
+                    className="px-10 py-2.5 border border-transparent rounded-full bg-gradient-to-r from-[#ad0d2f] to-[#7b021c] text-white flex items-center gap-2">
                     contact me <img src="/assets/right-arrow-white.png" alt="" className="w-4" />
                 </a>
 
