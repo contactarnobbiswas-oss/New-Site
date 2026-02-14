@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Footer() {
-  // সোশ্যাল মিডিয়া আইকনগুলোর জন্য সরাসরি SVG কোড ব্যবহার করা হয়েছে
   const socialIcons = [
     { 
       name: 'Facebook', 
@@ -33,14 +32,13 @@ export default function Footer() {
   return (
     <div className="mt-20">
       <div className="text-center">
-        {/* লোগো */}
-        <div className="flex justify-center mb-2">
-            <h3 className="text-3xl font-Ovo dark:text-white">
-                Arnob<span className="text-[#8c0522]">.</span>
-            </h3>
-        </div>
+        {/* লোগো ইমেজ সেকশন - আপনার অরিজিনাল ইমেজ লোগো ফিরিয়ে আনা হয়েছে */}
+        <a href="#!">
+            <img src="/assets/logo.png" alt="Logo" className="w-36 mx-auto mb-2 dark:hidden" />
+            <img src="/assets/logo_dark.png" alt="Logo Dark" className="w-36 mx-auto mb-2 hidden dark:block" />
+        </a>
 
-        {/* ইমেইল */}
+        {/* ইমেইল সেকশন */}
         <div className="w-max flex items-center gap-2 mx-auto text-gray-700 dark:text-white/90">
           <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -50,10 +48,9 @@ export default function Footer() {
       </div>
 
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-7">
-        {/* কপিরাইট */}
         <p className="text-gray-600 dark:text-white/80">© 2026 Arnob Biswas • All rights reserved.</p>
 
-        {/* সোশ্যাল আইকন (SVG) */}
+        {/* সোশ্যাল আইকন (SVG) - এগুলো আর কখনো ভাঙবে না */}
         <ul className="flex items-center gap-6 justify-center mt-4 sm:mt-0">
           {socialIcons.map((item, index) => (
             <li key={index}>
@@ -61,12 +58,9 @@ export default function Footer() {
                 href={item.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-white/90 hover:text-[#8c0522] dark:hover:text-[#8c0522] transition-all duration-300"
+                className="text-gray-600 dark:text-white/90 hover:text-[#8c0522] transition-all duration-300"
               >
-                <svg 
-                  viewBox="0 0 24 24" 
-                  className="w-6 h-6 fill-current hover:scale-125 transition-transform"
-                >
+                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current hover:scale-125 transition-transform">
                   {item.svg}
                 </svg>
               </a>
