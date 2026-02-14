@@ -50,8 +50,8 @@ export default function About() {
                         {data.map((item, index) => (
                             <li 
                                 key={index} 
-                                // এখানে সরাসরি আপনার ব্র্যান্ড কালার কোডটি ব্যবহার করা হয়েছে
-                                className="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-[#ad0d2f]"
+                                // এখানে আপনার নতুন Deep Red কালার কোডটি ব্যবহার করা হয়েছে
+                                className="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-[#8c0522]"
                             >
                                 <img src={item.icon1} alt="" className="w-7 mt-3 dark:hidden" />
                                 <img src={item.icon2} alt="" className="w-7 mt-3 hidden dark:block" />
