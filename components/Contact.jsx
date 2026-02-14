@@ -44,7 +44,7 @@ export default function Contact() {
                         placeholder="Enter your name" 
                         name="name"
                         required 
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500" 
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500 font-Ovo" 
                     />
 
                     <input 
@@ -52,7 +52,7 @@ export default function Contact() {
                         placeholder="Enter your email" 
                         name="email"
                         required 
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500" 
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500 font-Ovo" 
                     />
                 </div>
 
@@ -61,16 +61,14 @@ export default function Contact() {
                     placeholder="Enter your message" 
                     name="message"
                     required 
-                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500"
+                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500 font-Ovo"
                 ></textarea>
 
-                {/* বাটনটি এখন "Show more" এর সাথে ১০০% সামঞ্জস্যপূর্ণ */}
+                {/* বাটনটি এখন আপনার সাইটের অন্য সব বাটনের সাথে ১০০% মিলে যাবে */}
                 <button 
                     type='submit' 
                     className="py-3 px-10 w-max flex items-center justify-between gap-2 border-[0.5px] border-gray-700 rounded-full mx-auto duration-500 transition-all font-Ovo
-                               /* লাইট মোড: এখন একদম ক্লিন এবং মিনিমাল */
                                bg-white text-gray-700 hover:bg-[#f4f4f4]
-                               /* ডার্ক মোড: আগের মতোই পারফেক্ট */
                                dark:bg-transparent dark:text-white dark:border-white/50 
                                dark:hover:bg-[#8c0522] dark:hover:border-transparent"
                 >
