@@ -16,7 +16,7 @@ export default function Header() {
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
                 {/* Fixed Contact Me Button - No Border to remove glitch */}
                 <a href="#contact"
-                    className="px-10 py-2.5 rounded-full bg-gradient-to-r from-[#ad0d2f] to-[#7b021c] text-white flex items-center gap-2 border-none">
+                    className="px-10 py-2.5 rounded-full bg-gradient-to-r from-[#ad0d2f] to-[#8c0522] text-white flex items-center gap-2 border-none">
                     contact me <img src="/assets/right-arrow-white.png" alt="" className="w-4" />
                 </a>
 
