@@ -34,13 +34,10 @@ export default function About() {
 
             <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
                 <div className="max-w-max mx-auto relative">
+                    {/* গোল Spinning Circle অংশটি এখান থেকে সরিয়ে ফেলা হয়েছে */}
                     <img src='/assets/user-image.png' alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
-
-                    <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                        <img src="/assets/circular-text.png" alt="" className="w-full animate-spin_slow" />
-                        <img src="/assets/dev-icon.png" alt="" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                    </div>
                 </div>
+                
                 <div className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">
                         I am a dedicated Visual Storyteller and Video Editor committed to delivering premium post-production services. With a focus on cinematic quality and audience retention, I collaborate with international clients to bring their creative visions to life.
@@ -50,7 +47,7 @@ export default function About() {
                         {data.map((item, index) => (
                             <li 
                                 key={index} 
-                                // এখানে আপনার নতুন Deep Red কালার কোডটি ব্যবহার করা হয়েছে
+                                // আপনার পছন্দের Deep Red কালার (#8c0522) এখানে রাখা হয়েছে
                                 className="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-[#8c0522]"
                             >
                                 <img src={item.icon1} alt="" className="w-7 mt-3 dark:hidden" />
