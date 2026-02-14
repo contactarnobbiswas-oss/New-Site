@@ -44,7 +44,6 @@ export default function Contact() {
                         placeholder="Enter your name" 
                         name="name"
                         required 
-                        // এখানে focus:ring-0 এবং outline-none ব্যবহার করা হয়েছে যাতে কোনো কালার চেঞ্জ না হয়
                         className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500" 
                     />
 
@@ -65,12 +64,16 @@ export default function Contact() {
                     className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500"
                 ></textarea>
 
+                {/* বাটনটি আপডেট করা হয়েছে */}
                 <button 
                     type='submit' 
-                    className="py-3 px-10 w-max flex items-center justify-between gap-2 bg-black text-white rounded-full mx-auto hover:bg-[#8c0522] duration-500 dark:bg-transparent dark:border dark:border-white/50 dark:hover:bg-[#8c0522] dark:hover:border-transparent"
+                    // লাইট মোডে বর্ডার এবং ডার্ক মোডে রেড ব্যাকগ্রাউন্ড সেট করা হয়েছে
+                    className="py-3 px-10 w-max flex items-center justify-between gap-2 border border-gray-500 rounded-full mx-auto hover:bg-lightHover duration-500 dark:bg-[#8c0522] dark:text-white dark:border-none transition-all"
                 >
                     Submit now
-                    <img src="/assets/right-arrow-white.png" alt="" className="w-4" />
+                    {/* লাইট মোডে কালো অ্যারো এবং ডার্ক মোডে সাদা অ্যারো আইকন */}
+                    <img src="/assets/right-arrow-bold.png" alt="" className="w-4 dark:hidden" />
+                    <img src="/assets/right-arrow-white.png" alt="" className="w-4 hidden dark:block" />
                 </button>
 
                 <p className='mt-4 text-center text-gray-600 dark:text-white/70'>{result}</p>
