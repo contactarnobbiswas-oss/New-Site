@@ -9,8 +9,6 @@ export default function Contact() {
         setResult("Sending....");
         
         const formData = new FormData(event.target);
-
-        // আপনার Web3 Forms Access key এখানে বসান
         formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
 
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -24,7 +22,6 @@ export default function Contact() {
             setResult("Form Submitted Successfully!");
             event.target.reset();
         } else {
-            console.log("Error", data);
             setResult(data.message);
         }
     };
@@ -39,7 +36,6 @@ export default function Contact() {
             </p>
 
             <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
-                {/* সাবজেক্ট লাইনটি আপনার নামে আপডেট করা হয়েছে */}
                 <input type="hidden" name="subject" value="Arnob Biswas - New Portfolio Submission" />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
@@ -48,8 +44,8 @@ export default function Contact() {
                         placeholder="Enter your name" 
                         name="name"
                         required 
-                        // ডার্ক মোডে লাল রঙ সরিয়ে ডার্ক গ্রে করা হয়েছে
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#111111] dark:text-white focus:border-primary duration-500" 
+                        // ডার্ক মোডে আপনার দেওয়া #161616 কালার এবং আগের focus:ring-1 ফিরিয়ে আনা হয়েছে
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 duration-500" 
                     />
 
                     <input 
@@ -57,7 +53,7 @@ export default function Contact() {
                         placeholder="Enter your email" 
                         name="email"
                         required 
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#111111] dark:text-white focus:border-primary duration-500" 
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 duration-500" 
                     />
                 </div>
 
@@ -66,10 +62,8 @@ export default function Contact() {
                     placeholder="Enter your message" 
                     name="message"
                     required 
-                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#111111] dark:text-white focus:border-primary duration-500"
+                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#161616] dark:text-white focus:ring-1 duration-500"
                 ></textarea>
-
-                {/* ক্যাপচা ডিভটি এখান থেকে মুছে ফেলা হয়েছে */}
 
                 <button 
                     type='submit' 
