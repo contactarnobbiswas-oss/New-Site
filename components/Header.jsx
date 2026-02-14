@@ -7,7 +7,7 @@ export default function Header() {
                 <img src="/assets/hand-icon.png" alt="" className="w-6 mb-1" />
             </h3>
             <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Professional Video Editor & Visual Storyteller.</h1>
-            <p className="max-w-2xl mx-auto font-Ovo">I specialize in cinematic editing, YouTube content, and commercial ads with over 5 years of experience in creating viral visuals.</p>
+            <p className="max-w-2xl mx-auto font-Ovo">I specialize in cinematic editing, YouTube content, and commercial ads with over 6 years of experience in creating viral visuals.</p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
                 <a href="#contact"
