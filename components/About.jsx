@@ -11,7 +11,7 @@ export default function About() {
             name: 'Experience',
             icon1: '/assets/code-icon.png',
             icon2: '/assets/code-icon-dark.png',
-            description: '5+ Years in Professional Video Editing',
+            description: '6+ Years in Professional Video Editing',
         },
         {
             name: 'Specialization',
@@ -23,7 +23,7 @@ export default function About() {
             name: 'Projects',
             icon1: '/assets/project-icon.png',
             icon2: '/assets/project-icon-dark.png',
-            description: 'Successfully Delivered 100+ Videos',
+            description: 'Successfully Delivered 250+ Videos',
         },
     ];
 
