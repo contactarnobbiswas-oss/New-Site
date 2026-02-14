@@ -1,5 +1,4 @@
 export default function About() {
-    // এখানে ৫টির বদলে ৪টি টুল রাখা হয়েছে
     const tools = [
         { name: 'vscode', icon: '/assets/vscode.png', },
         { name: 'firebase', icon: '/assets/firebase.png', },
@@ -7,7 +6,6 @@ export default function About() {
         { name: 'figma', icon: '/assets/figma.png', },
     ];
 
-    // ভিডিও এডিটিং ক্যারিয়ারের সাথে সামঞ্জস্যপূর্ণ ডাটা
     const data = [
         {
             name: 'Experience',
@@ -52,8 +50,8 @@ export default function About() {
                         {data.map((item, index) => (
                             <li 
                                 key={index} 
-                                // এখানে dark:bg-primary ব্যবহার করা হয়েছে যাতে সার্ভিস সেকশনের লাল রঙের সাথে মিলে যায়
-                                className="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-primary/90"
+                                // এখানে সরাসরি আপনার ব্র্যান্ড কালার কোডটি ব্যবহার করা হয়েছে
+                                className="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-[#ad0d2f]"
                             >
                                 <img src={item.icon1} alt="" className="w-7 mt-3 dark:hidden" />
                                 <img src={item.icon2} alt="" className="w-7 mt-3 hidden dark:block" />
