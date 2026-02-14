@@ -9,8 +9,6 @@ export default function Contact() {
         setResult("Sending....");
         
         const formData = new FormData(event.target);
-
-        // আপনার Web3 Forms Access key এখানে বসান
         formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
 
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -24,7 +22,6 @@ export default function Contact() {
             setResult("Form Submitted Successfully!");
             event.target.reset();
         } else {
-            console.log("Error", data);
             setResult(data.message);
         }
     };
@@ -47,8 +44,8 @@ export default function Contact() {
                         placeholder="Enter your name" 
                         name="name"
                         required 
-                        // focus:ring-0 এবং focus:border-primary ব্যবহার করে ডাবল কালার গ্লিচ ফিক্স করা হয়েছে
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:border-primary focus:ring-0 duration-500" 
+                        // এখানে focus:ring-0 এবং outline-none ব্যবহার করা হয়েছে যাতে কোনো কালার চেঞ্জ না হয়
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500" 
                     />
 
                     <input 
@@ -56,7 +53,7 @@ export default function Contact() {
                         placeholder="Enter your email" 
                         name="email"
                         required 
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:border-primary focus:ring-0 duration-500" 
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#181818] dark:text-white focus:ring-0 duration-500" 
                     />
                 </div>
 
@@ -65,7 +62,7 @@ export default function Contact() {
                     placeholder="Enter your message" 
                     name="message"
                     required 
-                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#161616] dark:text-white focus:border-primary focus:ring-0 duration-500"
+                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500"
                 ></textarea>
 
                 <button 
