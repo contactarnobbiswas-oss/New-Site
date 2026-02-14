@@ -44,8 +44,8 @@ export default function Contact() {
                         placeholder="Enter your name" 
                         name="name"
                         required 
-                        // ডার্ক মোডে আপনার দেওয়া #161616 কালার এবং আগের focus:ring-1 ফিরিয়ে আনা হয়েছে
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 duration-500" 
+                        // focus:ring-primary যোগ করা হয়েছে যাতে ক্লিক করলে লাল আভা দেখায়
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 focus:ring-primary duration-500" 
                     />
 
                     <input 
@@ -53,7 +53,7 @@ export default function Contact() {
                         placeholder="Enter your email" 
                         name="email"
                         required 
-                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 duration-500" 
+                        className="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white dark:bg-[#161616] dark:text-white focus:ring-1 focus:ring-primary duration-500" 
                     />
                 </div>
 
@@ -62,7 +62,7 @@ export default function Contact() {
                     placeholder="Enter your message" 
                     name="message"
                     required 
-                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#161616] dark:text-white focus:ring-1 duration-500"
+                    className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#161616] dark:text-white focus:ring-1 focus:ring-primary duration-500"
                 ></textarea>
 
                 <button 
