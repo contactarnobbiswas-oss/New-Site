@@ -1,35 +1,34 @@
 export default function Services() {
     const services = [
         {
-            name: 'Web design',
+            name: 'YouTube Editing',
             icon: '/assets/web-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
+            description: 'Engaging storytelling with fast-paced cuts, captions, and sound design.',
         },
         {
-            name: 'Mobile app',
+            name: 'Commercial Ads',
             icon: '/assets/mobile-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
+            description: 'High-conversion video ads for social media and business growth.',
         },
         {
-            name: 'UI/ UX design',
+            name: 'Shorts/Reels',
             icon: '/assets/ui-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
+            description: 'High-retention editing with viral hooks, dynamic captions, and trendy transitions.',
         },
         {
-            name: 'Graphics design',
+            name: 'YouTube Automation',
             icon: '/assets/graphics-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
+            description: 'Complete faceless channel management and niche-specific growth strategies.',
         }
     ];
+
     return (
         <div id="services" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">What i offer</h4>
             <h2 className="text-center text-5xl font-Ovo">My services</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+                Expert video editing solutions tailored for modern creators and businesses. I focus on the technical details so you can focus on creating the content that matters.
+            </p>
 
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
@@ -37,7 +36,6 @@ export default function Services() {
                         <img src={service.icon} alt="" className="w-10" />
                         <h3 className="text-lg my-4 text-gray-700 dark:text-white">{service.name}</h3>
                         <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{service.description}</p>
-                        <a href={service.link} className="flex items-center gap-2 text-sm mt-5">Read more <img src="/assets/right-arrow.png" alt="" className="w-4" /></a>
                     </div>
                 ))}
             </div>
