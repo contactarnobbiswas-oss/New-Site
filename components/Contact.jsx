@@ -64,14 +64,17 @@ export default function Contact() {
                     className="w-full px-4 py-3 outline-none border border-gray-300 dark:border-white/30 rounded-md bg-white mb-6 dark:bg-[#181818] dark:text-white focus:ring-0 duration-500"
                 ></textarea>
 
-                {/* বাটনটি আপডেট করা হয়েছে */}
+                {/* বাটন স্টাইল আপডেট করা হয়েছে */}
                 <button 
                     type='submit' 
-                    // লাইট মোডে বর্ডার এবং ডার্ক মোডে রেড ব্যাকগ্রাউন্ড সেট করা হয়েছে
-                    className="py-3 px-10 w-max flex items-center justify-between gap-2 border border-gray-500 rounded-full mx-auto hover:bg-lightHover duration-500 dark:bg-[#8c0522] dark:text-white dark:border-none transition-all"
+                    className="py-3 px-10 w-max flex items-center justify-between gap-2 border border-gray-400 rounded-full mx-auto duration-500 transition-all
+                               /* লাইট মোড: সাদা ব্যাকগ্রাউন্ড এবং আপনার দেওয়া #f4f4f4 হোভার কালার */
+                               bg-white text-black hover:bg-[#f4f4f4]
+                               /* ডার্ক মোড: আপনার ব্র্যান্ড রেড ব্যাকগ্রাউন্ড */
+                               dark:bg-[#8c0522] dark:text-white dark:border-none dark:hover:bg-[#b0062a]"
                 >
                     Submit now
-                    {/* লাইট মোডে কালো অ্যারো এবং ডার্ক মোডে সাদা অ্যারো আইকন */}
+                    {/* লাইট মোডে কালো এবং ডার্ক মোডে সাদা অ্যারো */}
                     <img src="/assets/right-arrow-bold.png" alt="" className="w-4 dark:hidden" />
                     <img src="/assets/right-arrow-white.png" alt="" className="w-4 hidden dark:block" />
                 </button>
