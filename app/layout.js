@@ -14,7 +14,7 @@ const ovo = Ovo({
 
 export const metadata = {
     title: "Arnob Biswas - Visual Editor",
-    description: "Arnob Biswas is a Professional Video Editor & Visual Storyteller. I specialize in cinematic editing, YouTube content, and commercial ads with over 6 years of experience in creating viral visuals.",
+    description: "Arnob Biswas is a Professional Video Editor & Visual Storyteller. He specializes in cinematic editing, YouTube content, and commercial ads with over 6 years of experience in creating viral visuals.",
 };
 
 export default function RootLayout({ children }) {
